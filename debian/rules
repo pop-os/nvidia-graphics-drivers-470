@@ -254,9 +254,9 @@ override_dh_gencontrol: generate-runtimepm-aliases
 generate-modaliases:
 	# Generate modaliases for the restricted drivers manager
 	mkdir -p $(CURDIR)/debian/$(pkg_meta)-modaliases/usr/share/jockey/modaliases/
-	sh -e $(CURDIR)/debian/nvidia_supported \
+	python3 $(CURDIR)/debian/nvidia_supported \
 		$(pkg_module) $(pkg_meta) \
-		NVIDIA-Linux/README.txt \
+		NVIDIA-Linux/supported-gpus/supported-gpus.json \
 		> $(CURDIR)/debian/$(pkg_meta).modaliases
 	# Take additional card ids from a text file
 	# Generate a modalias for each ID
@@ -281,7 +281,7 @@ get-orig-source-prepare/%: get-orig-source-prepare
 
 get-orig-source-download/%: get-orig-source-prepare
 	ln -v $(CACHE)/$(NVIDIA_FILENAME_$*) get-orig-source/ 2>/dev/null || \
-		wget $(call get_download_url,$*) -P get-orig-source/
+		wget $(call get_download_url,$*) -P get-orig-source/ || cp $*/$(NVIDIA_FILENAME_$*) get-orig-source/
 	if [ -d $(CACHE) ] && [ ! -f $(CACHE)/$(NVIDIA_FILENAME_$*) ]; then \
 		ln -v get-orig-source/$(NVIDIA_FILENAME_$*) $(CACHE) ; fi
 
