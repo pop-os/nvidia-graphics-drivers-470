@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-470 (470.141.03-1pop0) focal; urgency=medium
+
+  * 470.141.03: https://www.nvidia.com/Download/driverResults.aspx/191232/en-us/
+
+ -- Brock Szuszczewicz <brock@szu.email>  Mon, 08 Aug 2022 13:30:02 -0600
+
 nvidia-graphics-drivers-470 (470.129.06-1pop0) focal; urgency=medium
 
   * 470.129.06: https://www.nvidia.com/Download/driverResults.aspx/188877/en-us
