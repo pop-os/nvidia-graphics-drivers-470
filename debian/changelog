@@ -1,107 +1,210 @@
-nvidia-graphics-drivers-470 (470.161.03-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.199.02-1pop0) focal; urgency=medium
 
-  * 470.161.03: https://www.nvidia.com/Download/driverResults.aspx/194637/en-us/
+  * 470.199.02: https://www.nvidia.com/Download/driverResults.aspx/205995/en-us/
 
- -- Gustavo de Bona <gustavo.bona@grad.ufsc.br>  Fri, 10 Feb 2023 07:55:29 -0300
+ -- Michael Aaron Murphy <michael@mmurphy.dev>  Fri, 04 Aug 2023 20:18:07 +0200
 
-nvidia-graphics-drivers-470 (470.141.03-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.199.02-0ubuntu1) mantic; urgency=medium
 
-  * 470.141.03: https://www.nvidia.com/Download/driverResults.aspx/191232/en-us/
+  * New upstream release (LP: #2024675).
+  * debian/templates/dkms_nvidia.conf.in:
+    - Drop buildfix_kernel_6.3.patch.
 
- -- Brock Szuszczewicz <brock@szu.email>  Mon, 08 Aug 2022 13:30:02 -0600
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 23 Jun 2023 15:31:04 +0000
 
-nvidia-graphics-drivers-470 (470.129.06-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.182.03-0ubuntu2) mantic; urgency=medium
 
-  * 470.129.06: https://www.nvidia.com/Download/driverResults.aspx/188877/en-us
+  [ Paolo Pisati ]
+  * debian/templates/dkms_nvidia.conf.in,
+    debian/dkms_nvidia/patches/buildfix_kernel_6.3.patch:
+    - Support Linux 6.3 ABI (LP: #2019979).
 
- -- Jeremy Soller <jeremy@system76.com>  Tue, 24 May 2022 11:02:07 -0600
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 18 May 2023 13:47:54 +0000
 
-nvidia-graphics-drivers-470 (470.103.01-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.182.03-0ubuntu1) lunar; urgency=medium
 
-  * 470.103.01: https://www.nvidia.com/download/driverResults.aspx/186016/en-us
+  * New upstream release (LP: #2012529).
+  * debian/templates/dkms_nvidia.conf.in:
+    - Drop buildfix_kernel_6.2.patch.
 
- -- Jeremy Soller <jeremy@system76.com>  Thu, 05 May 2022 10:25:38 -0600
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 27 Mar 2023 09:30:58 +0000
 
-nvidia-graphics-drivers-470 (470.86-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.161.03-0ubuntu2) lunar; urgency=medium
 
-  * 470.86: https://www.nvidia.com/Download/driverResults.aspx/183575/en-us
+  * debian/dkms_nvidia/patches/buildfix_kernel_6.2.patch,
+    debian/templates/dkms_nvidia.conf.in,
+    debian/dkms_nvidia.conf:
+    - Add support for Linux 6.2 (LP: #2009246).
 
- -- Jeremy Soller <jeremy@system76.com>  Thu, 11 Nov 2021 07:39:10 -0700
+ -- Andrea Righi <andrea.righi@canonical.com>  Sat, 04 Mar 2023 08:08:01 +0000
 
-nvidia-graphics-drivers-470 (470.82.00-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.161.03-0ubuntu1) lunar; urgency=medium
 
-  * 470.82.00: https://www.nvidia.com/Download/driverResults.aspx/181278/en-us
+  * New upstream release (LP: #1997087).
 
- -- Jeremy Soller <jeremy@system76.com>  Tue, 26 Oct 2021 10:48:56 -0600
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 22 Nov 2022 16:43:40 +0000
 
-nvidia-graphics-drivers-470 (470.63.01-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-470 (470.141.03-0ubuntu1) kinetic; urgency=medium
 
-  * 470.63.01: https://www.nvidia.com/Download/driverResults.aspx/179599/en-us
+  [ Alberto Milone ]
+  * New upstream release (LP: #1982501).
+  * debian/templates/dkms_nvidia.conf.in:
+    - Drop buildfix_kernel_5.19.patch.
+  * debian/additional_card_ids:
+    - Add the missing 1EB8 ID.
 
- -- Jeremy Soller <jeremy@system76.com>  Thu, 09 Sep 2021 08:32:15 -0600
+  [ Dimitri John Ledkov ]
+  * debian/templates/dkms_nvidia.conf.in:
+    - Disable IBT linking by default.
+    - Version restrict disable_fstack-clash-protection_fcf-protection patch.
 
-nvidia-graphics-drivers-470 (470.57.02-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 29 Jul 2022 08:45:28 +0000
 
-  * 470.57.02: https://www.nvidia.com/download/driverResults.aspx/177145/en-us 
+nvidia-graphics-drivers-470 (470.129.06-0ubuntu2) kinetic; urgency=medium
 
- -- Michael Aaron Murphy <mmstick@pm.me>  Wed, 21 Jul 2021 12:21:38 -0600
+  [ Andrea Righi ]
+  * debian/dkms_nvidia/patches/buildfix_kernel_5.19.patch,
+    debian/templates/dkms_nvidia.conf.in:
+    - Add support for Linux 5.19 (LP: #1978539).
 
-nvidia-graphics-drivers-465 (465.31-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 30 Jun 2022 15:33:40 +0000
 
-  * 465.31: https://www.nvidia.com/Download/driverResults.aspx/175539/en-us
+nvidia-graphics-drivers-470 (470.129.06-0ubuntu1) kinetic; urgency=medium
 
- -- Jacob Kauffmann <jacob@system76.com>  Thu, 15 Apr 2021 10:43:45 -0600
+  * New upstream release (LP: #1973300).
 
-nvidia-graphics-drivers-465 (465.24.02-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 16 May 2022 10:20:14 +0000
 
-  * 465.24.02: https://www.nvidia.com/Download/driverResults.aspx/172836/en-us
+nvidia-graphics-drivers-470 (470.103.01-0ubuntu2) jammy; urgency=medium
 
- -- Michael Aaron Murphy <michael@system76.com>  Thu, 15 Apr 2021 10:43:45 -0600
+  * debian/rules.defs:
+    - Add support for video ABI 25.
 
-nvidia-graphics-drivers-460 (460.67-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 23 Feb 2022 18:04:15 +0100
 
-  * 460.67: https://www.nvidia.com/download/driverResults.aspx/171392/en-us
+nvidia-graphics-drivers-470 (470.103.01-0ubuntu1) jammy; urgency=medium
 
- -- Michael Aaron Murphy <michael@system76.com>  Thu, 18 Mar 2021 12:29:53 -0600
+  * New upstream release.
 
-nvidia-graphics-drivers-460 (460.56-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 28 Jan 2022 17:49:43 +0100
 
-  * 460.56: https://www.nvidia.com/download/driverResults.aspx/170804 
+nvidia-graphics-drivers-470 (470.86-0ubuntu2) jammy; urgency=medium
 
- -- Michael Aaron Murphy <mmstick@pm.me>  Thu, 25 Feb 2021 09:17:15 -0700
+  * debian/templates/control.in,
+    debian/templates/libnvidia-gl-flavour.install.in,
+    debian/templates/libnvidia-gl-flavour.links.in:
+    - Add libnvidia-vulkan-producer.so and build depend on
+      libnvidia-egl-wayland1 (LP: #1935082).
 
-nvidia-graphics-drivers-460 (460.39-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 26 Jan 2022 17:20:50 +0100
 
-  * 460.39: https://www.nvidia.com/Download/driverResults.aspx/170134
+nvidia-graphics-drivers-470 (470.86-0ubuntu1) jammy; urgency=medium
 
- -- Jeremy Soller <jeremy@system76.com>  Wed, 27 Jan 2021 08:59:16 -0700
+  * New upstream release (LP: #1950665):
+    - Fixed a regression which prevented DisplayPort and HDMI 2.1
+      variable refresh rate (VRR) G-SYNC Compatible monitors from
+      functioning correctly in variable refresh rate mode, resulting
+      in issues such as flickering.
 
-nvidia-graphics-drivers-460 (460.32.03-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 11 Nov 2021 16:47:27 +0100
 
-  * 460.32.03: https://www.nvidia.com/Download/driverResults.aspx/168347
+nvidia-graphics-drivers-470 (470.82.00-0ubuntu2) jammy; urgency=medium
 
- -- Jeremy Soller <jeremy@system76.com>  Thu, 07 Jan 2021 09:25:48 -0700
+  [ Kai-Heng Feng ]
+  * debian/71-nvidia.rules:
+    - Enable runtime PM after driver is bound (LP: #1949026).
 
-nvidia-graphics-drivers-455 (455.45-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 28 Oct 2021 13:37:28 +0200
 
-  * 455.45 
+nvidia-graphics-drivers-470 (470.82.00-0ubuntu1) jammy; urgency=medium
 
- -- Michael Aaron Murphy <mmstick@pm.me>  Mon, 14 Dec 2020 10:37:33 -0700
+  * New upstream release (LP: #1948025):
+    - Fixed a bug that can cause a kernel crash in SLI Mosaic
+      configurations.
+    - Added support for the EGL_NV_robustness_video_memory_purge.
 
-nvidia-graphics-drivers-455 (455.38-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 26 Oct 2021 12:39:25 +0200
 
-  * 455.38 
+nvidia-graphics-drivers-470 (470.74-0ubuntu1) impish; urgency=medium
 
- -- Michael Aaron Murphy <michael@system76.com>  Mon, 09 Nov 2020 20:43:19 -0700
+  * New upstream release:
+    - Updated the nvidia-drm kernel module for compatibility with the
+      removal of the DRIVER_PRIME flag in recent Linux kernel
+      versions.
+    - Updated nvidia-bug-report.sh to search the systemd journal for
+      gdm-x-session logs.
+    - Fixed a bug that could prevent nvidia-xconfig from disabling
+      the X Composite extension on version 1.20 of the X.org X
+      server.
+    - Fixed a build failure, "too many arguments to function
+      'get_user_pages'", when building the NVIDIA kernel module for
+      Linux kernel v4.4.168.
+    - Fixed a build failure, "implicit declaration of function
+      do_gettimeofday", when building the NVIDIA kernel module for
+      Linux kernel 5.0 release candidates.
 
-nvidia-graphics-drivers-455 (455.28-1pop0) focal; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 23 Sep 2021 12:49:09 +0200
 
-  * Pop!_OS patches
+nvidia-graphics-drivers-470 (470.63.01-0ubuntu5) impish; urgency=medium
 
- -- Jeremy Soller <jeremy@system76.com>  Mon, 19 Oct 2020 13:48:25 -0600
+  * debian/templates/control.in:
+    - Add transitional packages for the 460 series.
 
-nvidia-graphics-drivers-455 (455.28-0ubuntu1) groovy; urgency=medium
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 08 Sep 2021 15:50:57 +0200
 
-  * Initial release (LP: #1897751).
+nvidia-graphics-drivers-470 (470.63.01-0ubuntu4) impish; urgency=medium
 
- -- Alberto Milone <alberto.milone@canonical.com>  Wed, 07 Oct 2020 16:58:09 +0200
+  * debian/nvidia_supported:
+    - Ignore subsystem vendor and id when generating modaliases, so that we don't
+      exclude devices that are actually supported (LP: #1939673).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 31 Aug 2021 17:48:34 +0200
+
+nvidia-graphics-drivers-470 (470.63.01-0ubuntu3) impish; urgency=medium
+
+  * No change rebuild against release pocket glibc, to prevent getting
+    entagled with glibc 2.34.
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Mon, 16 Aug 2021 15:02:21 +0100
+
+nvidia-graphics-drivers-470 (470.63.01-0ubuntu2) impish; urgency=medium
+
+  * Revert "Add libnvidia-vulkan-producer.so.$version and reformat the spacing".
+    Let's wait until egl-wayland is in main (LP: #1935082).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 12 Aug 2021 11:03:57 +0200
+
+nvidia-graphics-drivers-470 (470.63.01-0ubuntu1) impish; urgency=medium
+
+  * New upstream release:
+    - Added support for the following GPUs:
+        NVIDIA RTX A2000
+    - Added support for the VK_KHR_wayland_surface extension.
+    - Fixed a Vulkan performance regression that affected rFactor2.
+  * debian/templates/libnvidia-gl-flavour.install.in,
+    debian/templates/libnvidia-gl-flavour.links.in:
+    - Add libnvidia-vulkan-producer.so.$version and reformat the spacing
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 11 Aug 2021 12:27:25 +0200
+
+nvidia-graphics-drivers-470 (470.57.02-0ubuntu2) impish; urgency=medium
+
+  * debian/nvidia_supported,
+    debian/rules:
+    - Use the json database file to generate the modaliases.
+    - Fix aliases generation.
+      We were not matching some of the aliases because of some missing
+      zeroes in the subdevice and subvendor ids.
+  * debian/pm-aliases-gen:
+    - Fix aliases generation for runtimepm.
+      We were not matching some of the aliases because of some missing
+      zeroes in the subdevice and subvendor ids.
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 09 Aug 2021 15:53:27 +0200
+
+nvidia-graphics-drivers-470 (470.57.02-0ubuntu1) impish; urgency=medium
+
+  * Initial release.
+  * Replace the 465 series (LP: #1933980)
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 12 Jul 2021 11:09:14 +0200
