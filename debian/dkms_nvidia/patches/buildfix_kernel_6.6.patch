@@ -1,7 +1,7 @@
 From a1879549b0bf049de790c0775c25971c82da8638 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Joan=20Bruguera=20Mic=C3=B3?= <joanbrugueram@gmail.com>
 Date: Sat, 15 Jul 2023 22:26:18 +0000
-Subject: [PATCH] Tentative fix for NVIDIA 470.199.02 driver for Linux 6.6-rc1
+Subject: [PATCH] Tentative fix for NVIDIA 470.239.06 driver for Linux 6.6-rc1
 
 ---
  nvidia-drm/nvidia-drm-drv.c | 4 ++++

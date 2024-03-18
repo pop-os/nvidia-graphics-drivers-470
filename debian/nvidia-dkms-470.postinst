@@ -9,7 +9,7 @@
 set -e
 
 PACKAGE_NAME=nvidia
-CVERSION=470.199.02
+CVERSION=470.239.06
 CVERSION=${CVERSION#*really.}
 
 
@@ -34,7 +34,7 @@ esac
 _is_kernel_name_correct() {
     CORRECT="no"
     KERNEL_NAME=$1
- 
+
     for kernel in /boot/config-*; do
         [ -f "$kernel" ] || continue
         KERNEL=${kernel#*-}
