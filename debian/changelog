@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-470 (470.239.06-1pop0) jammy; urgency=medium
+
+  * https://www.nvidia.com/Download/driverResults.aspx/218852/en-us/
+
+ -- Michael Aaron Murphy <michael@mmurphy.dev>  Mon, 18 Mar 2024 21:25:19 +0100
+
 nvidia-graphics-drivers-470 (470.199.02-1pop0) focal; urgency=medium
 
   * 470.199.02: https://www.nvidia.com/Download/driverResults.aspx/205995/en-us/
