@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-470 (470.256.02-1pop0) jammy; urgency=medium
+
+  * https://www.nvidia.com/en-us/drivers/details/226760/
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 03 Oct 2024 09:16:55 -0600
+
 nvidia-graphics-drivers-470 (470.239.06-1pop0) jammy; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/218852/en-us/
