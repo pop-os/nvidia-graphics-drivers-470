@@ -311,3 +311,7 @@ get-orig-source-files/empty: get-orig-source-prepare/empty $(foreach a,$(ARCH_LI
 .PHONY: get-orig-source
 get-orig-source: get-orig-source-pack/empty
 	rm -rf get-orig-source
+
+# Fix i386 builds
+override_dh_builddeb:
+	dh_builddeb -- -Zzstd -z3
