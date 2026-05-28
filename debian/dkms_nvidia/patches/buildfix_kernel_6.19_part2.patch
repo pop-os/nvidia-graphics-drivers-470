@@ -68,18 +68,15 @@ diff --git a/conftest.sh b/conftest.sh
 index 263a404..294d6e5 100755
 --- a/conftest.sh
 +++ b/conftest.sh
-@@ -208,6 +208,11 @@ build_cflags() {
- 
-     # Specify the C standard, instead of defaulting to the compiler's
-     CFLAGS="$CFLAGS -std=gnu17"
-+
-+    # Rel. commit "Kbuild: enable -fms-extensions" (Rasmus Villemoes, 20 Oct 2025)
-+    # Enable the flags since the Linux headers use those extensions in some structs
-+    # See https://www.phoronix.com/news/Linux-6.19-Patch-Would-MS-Ext
-+    CFLAGS="$CFLAGS -fms-extensions"
+@@ -99,7 +99,7 @@
  }
- 
- CONFTEST_PREAMBLE="#include \"conftest/headers.h\"
+
+ build_cflags() {
+-    BASE_CFLAGS="-O2 -D__KERNEL__ \
++    BASE_CFLAGS="-fms-extensions -O2 -D__KERNEL__ \
+ -DKBUILD_BASENAME=\"#conftest$$\" -DKBUILD_MODNAME=\"#conftest$$\" \
+ -nostdinc -isystem $ISYSTEM"
+
 @@ -5013,7 +5018,11 @@ compile_test() {
              CODE="
              #include <linux/mm_types.h>
